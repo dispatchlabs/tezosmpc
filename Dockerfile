@@ -1,12 +1,12 @@
 FROM node:10
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /var/tezosmpc
 
 COPY . .
 
 # Install app dependencies
-WORKDIR /usr/src/app/jiff
+WORKDIR /var/tezosmpc/src
 
 RUN npm install
 
